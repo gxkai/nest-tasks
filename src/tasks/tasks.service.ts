@@ -13,7 +13,7 @@ export class TasksService {
 
     getTaskById(id: string): Task {
         const task = this.tasks.find((t) => t.id == id);
-        if(!task) {
+        if (!task) {
             throw new NotFoundException('Unable to find task');
         }
         return task;
@@ -38,6 +38,14 @@ export class TasksService {
             status: TaskStatus.OPEN,
         };
         this.tasks.push(task);
+        return task;
+    }
+
+
+
+    updateTaskStatus(id: string, status: TaskStatus): Task {
+        const task = this.tasks.find((t) => t.id == id);
+        task.status = status;
         return task;
     }
 }

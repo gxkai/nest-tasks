@@ -1,6 +1,6 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
-@taskId=0f5928d3-5c00-4ab2-a9d5-f4e1fa903945
+@taskId=fb0d2df5-de9a-4a6f-ba2b-a31361b1d926
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
@@ -12,6 +12,14 @@ Content-Type: application/json
 {
     "title":"remember to check shares",
     "description":"I should remember to check SHIVAM shares"
+}
+###
+
+PATCH  {{baseUrl}}/{{basePath}}/{{taskId}}/status HTTP/1.1
+Content-Type: application/json
+
+{
+    "status":"IN_PROGRESS"
 }
 
 ###
