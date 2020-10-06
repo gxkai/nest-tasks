@@ -13,8 +13,8 @@ export class TasksService {
     constructor(@InjectRepository(TaskRepository) private readonly taskRepository: TaskRepository) { }
 
 
-    getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
-        return this.taskRepository.getTasks(filterDto);
+    getTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
+        return this.taskRepository.getTasks(filterDto,user);
     }
 
 

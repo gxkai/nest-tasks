@@ -3,6 +3,8 @@
 @taskId=2
 @token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRsb2hhbmkiLCJpYXQiOjE2MDE5OTY4MjIsImV4cCI6MTYwMjAwMDQyMn0.-1q17-t7CyhYKZH8vyP4sj5GVrSCK736qjwj0fFSWec
 
+@token2=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRsb2hhbmkyIiwiaWF0IjoxNjAxOTk3MjIzLCJleHAiOjE2MDIwMDA4MjN9.u-x6p6xrovbaZSJijgqnhoqSc3qLzLQUP4jwLmbFVUM
+
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 Authorization: {{token}}
 
