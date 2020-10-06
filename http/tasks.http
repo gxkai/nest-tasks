@@ -5,7 +5,7 @@
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
 ###
-GET {{baseUrl}}/{{basePath}}?status=DONE&search=share HTTP/1.1
+GET {{baseUrl}}/{{basePath}}?status=DONE&search=SHI HTTP/1.1
 
 ###
 //invalid filter request
