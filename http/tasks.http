@@ -1,8 +1,11 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
-@taskId=fb0d2df5-de9a-4a6f-ba2b-a31361b1d926
+@taskId=8ceedefc-7194-4994-9fe1-88507f3cf4bc
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
+
+###
+GET {{baseUrl}}/{{basePath}}?status=DONE&search=share HTTP/1.1
 
 ###
 
@@ -10,7 +13,7 @@ POST {{baseUrl}}/{{basePath}} HTTP/1.1
 Content-Type: application/json
 
 {
-    "title":"remember to check shares",
+    "title":"Nest Js",
     "description":"I should remember to check SHIVAM shares"
 }
 ###
@@ -19,7 +22,7 @@ PATCH  {{baseUrl}}/{{basePath}}/{{taskId}}/status HTTP/1.1
 Content-Type: application/json
 
 {
-    "status":"IN_PROGRESS"
+    "status":"DONE"
 }
 
 ###
