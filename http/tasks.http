@@ -1,15 +1,19 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
 @taskId=2
+@token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRsb2hhbmkiLCJpYXQiOjE2MDE5OTU3MzEsImV4cCI6MTYwMTk5OTMzMX0.HJH3gG2mBg3HIE7pvJOtshj4wcu47YG97Y7vKHMnFBQ
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
+Authorization: {{token}}
 
 ###
 GET {{baseUrl}}/{{basePath}}?status=DONE&search=SHI HTTP/1.1
+Authorization: {{token}}
 
 ###
 //invalid filter request
 GET {{baseUrl}}/{{basePath}}?status=ded&search= HTTP/1.1
+Authorization: {{token}}
 
 ###
 
