@@ -33,11 +33,8 @@ export class TasksService {
     }
 
     deleteTask(id: string): Task {
-        const index = this.tasks.findIndex((t) => t.id == id);
-        const task = this.tasks[index];
-        if (!task) {
-            throw new NotFoundException('Unable to find task');
-        }
+        const task = this.getTaskById(id);
+        const index = this.tasks.indexOf(task);
         this.tasks.splice(index, 1);
         return task;
     }
@@ -57,7 +54,7 @@ export class TasksService {
 
 
     updateTaskStatus(id: string, status: TaskStatus): Task {
-        const task = this.tasks.find((t) => t.id == id);
+        const task = this.getTaskById(id);
         task.status = status;
         return task;
     }
