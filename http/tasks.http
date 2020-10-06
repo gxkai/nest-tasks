@@ -1,6 +1,6 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
-@taskId=e737891c-ba9c-44a0-b4f9-28fd23bc7efd
+@taskId=0f5928d3-5c00-4ab2-a9d5-f4e1fa903945
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
@@ -17,3 +17,7 @@ Content-Type: application/json
 ###
 
 GET {{baseUrl}}/{{basePath}}/{{taskId}} HTTP/1.1
+
+###
+
+DELETE {{baseUrl}}/{{basePath}}/{{taskId}} HTTP/1.1
