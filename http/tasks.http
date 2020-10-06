@@ -1,5 +1,6 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
+@taskId=e737891c-ba9c-44a0-b4f9-28fd23bc7efd
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
@@ -14,3 +15,5 @@ Content-Type: application/json
 }
 
 ###
+
+GET {{baseUrl}}/{{basePath}}/{{taskId}} HTTP/1.1
