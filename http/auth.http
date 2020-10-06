@@ -17,3 +17,7 @@ content-type: application/json
     "username":"dlohani",
     "password":"##d3dsf219Adx"
 }
+
+###
+POST {{baseUrl}}/{{basePath}}/test HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRsb2hhbmkiLCJpYXQiOjE2MDE5OTQxNDYsImV4cCI6MTYwMTk5Nzc0Nn0.wVuIUoHQhpULHZite1dR_yVKs8YgX5-7TvbeoIMpPIQ
