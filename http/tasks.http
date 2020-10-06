@@ -1,6 +1,6 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
-@taskId=f37787b7-cba5-4b84-a954-5a07e7c1ad96
+@taskId=1
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
@@ -17,7 +17,7 @@ POST {{baseUrl}}/{{basePath}} HTTP/1.1
 Content-Type: application/json
 
 {
-    "title":"Nest Js",
+    "title":"Share market",
     "description":"I should remember to check SHIVAM shares"
 }
 ###
