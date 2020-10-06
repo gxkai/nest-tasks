@@ -8,3 +8,12 @@ content-type: application/json
     "username":"dlohani",
     "password":"##d3dsf219Adx"
 }
+###
+
+POST {{baseUrl}}/{{basePath}}/signin HTTP/1.1
+content-type: application/json
+
+{
+    "username":"dlohani",
+    "password":"##d3dsf219Adx"
+}
