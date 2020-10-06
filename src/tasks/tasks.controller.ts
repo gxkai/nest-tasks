@@ -35,8 +35,8 @@ export class TasksController {
         return this.taskService.createTask(createTaskDto);
     }
 
-    // @Patch(':id/status')
-    // updateTaskStatus(@Param('id') id: string, @Body('status', TaskStatusValidationPipe) status: TaskStatus) {
-    //     return this.taskService.updateTaskStatus(id, status);
-    // }
+    @Patch(':id/status')
+    updateTaskStatus(@Param('id', ParseIntPipe) id: number, @Body('status', TaskStatusValidationPipe) status: TaskStatus) {
+        return this.taskService.updateTaskStatus(id, status);
+    }
 }

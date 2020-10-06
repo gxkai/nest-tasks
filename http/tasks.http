@@ -1,6 +1,6 @@
 @baseUrl=http://localhost:3000
 @basePath=tasks
-@taskId=1
+@taskId=2
 
 GET {{baseUrl}}/{{basePath}} HTTP/1.1
 
